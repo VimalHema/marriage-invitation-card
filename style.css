@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Bilbo+Swash+Caps&family=Mea+Culpa&family=Meie+Script&family=Monsieur+La+Doulaise&family=Petit+Formal+Script&family=Playball&family=Sacramento&family=WindSong:wght@500&display=swap');
+
+body{
+    background-image: url(6.jpg);
+    background-repeat: no-repeat;
+    background-size:100vw 100vh;
+    background-attachment:scroll;
+    text-align: center;
+    line-height: 1;
+    font-family: "Kalam";
+    font-weight: bold;
+    font-size: 0.4rem;
+
+    color: black;
+}
+
+.date{
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+
+.names{
+    padding-top:10px;
+    font-size: 30px;
+    font-weight: bolder;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,#000);  */
+    /* text-transform: uppercase; */
+    font-family: 'Playball', cursive;    line-height: 0.7em;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color:rgb(24, 24, 32);
+        text-shadow:none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: rgb(17, 74, 100);
+        text-shadow:0 0 10px rgb(115, 126, 224),
+        0 0 20px rgb(99, 110, 211),
+        0 0 40px rgb(81, 94, 211),
+        0 0 80px rgb(76, 89, 204),
+        0 0 160px rgb(74, 88, 212);
+
+
+    }
+}
+/* .names,.amp{
+    opacity: 0;
+    animation: revealText 1s linear forwards;
+}
+.one{
+    animation-delay: 1s;
+}
+.two{
+    animation-delay: 2s;
+}
+.three{
+    animation-delay: 2.5s;
+}
+@keyframes revealText{
+    from{
+        transform: translate(20px);
+    }
+    to{
+        opacity:1;
+        transform: none;
+    }
+} */
+
+
+.amp{
+    font-size: 1.2rem;
+    color: rgb(3, 57, 94);
+    /* padding-top:20px; */
+    padding-bottom: 0%;
+}
+p{
+   /* color: rgb(26, 63, 226); */
+   letter-spacing: 0.5px;
+}
+h1{
+    /* color: rgb(34, 27, 143); */
+    text-align:center;
+    margin-top: 50px;
+    /* margin-left: 15%; */
+    font-weight:bold;
+    font-size: 30px;
+    font-family: 'Mea Culpa', cursive;
+}
+
+
+.message{
+    font-size: 15px;
+    padding-right:70px;
+    padding-left:20%;
+    /* padding-top:10px; */
+    /* color: rgb(21, 33, 199); */
+}
+address{
+    /* color:  rgb(14, 7, 78); */
+    font-size: 9px;
+  padding-top: 0%;
+
+}
+a{
+    text-decoration: none;
+    color:  rgb(35, 23, 78);
+    font-size: 10px;
+
+}
+span{
+    color: rgb(25, 34, 134);
+}
+a:hover{
+    color:rgb(9, 86, 122)
+}
+img{
+    position:absolute;
+    height:120px;
+    width:110px;
+}
+.container{
+    width:100px;
+    height:100px;
+    position: relative;
+    /* padding-top:20px; */
+    /* margin-left: 30%; */
+    perspective: 1000px;
+    transform-style:preserve-3d;
+    /* transform: rotateX(-10deg) rotateZ(-10deg); */
+}
+
+.images{
+    
+    width:100%;
+    position: absolute;
+    transform-style:preserve-3d;
+    animation: rotate 40s linear infinite;
+}
+@keyframes rotate{
+    from{
+
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+img:nth-child(1){
+    transform: rotateY(60deg) translateZ(100px);
+}
+img:nth-child(2){
+    transform: rotateY(120deg) translateZ(100px);
+}
+img:nth-child(3){
+    transform: rotateY(180deg) translateZ(100px);
+}
+img:nth-child(4){
+    transform: rotateY(240deg) translateZ(100px);
+}
+img:nth-child(5){
+    transform: rotateY(300deg) translateZ(100px);
+}
+img:nth-child(6){
+    transform: rotateY(360deg) translateZ(100px);
+}
+img:hover{
+    width:200px;
+    height:200px;
+}
